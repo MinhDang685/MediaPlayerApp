@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mediaplayer_activity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cleveroad.audiovisualization.GLAudioVisualizationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/visualizer_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:av_bubblesSize="@dimen/bubble_size"
+        app:av_bubblesRandomizeSizes="true"
+        app:av_wavesHeight="@dimen/wave_height"
+        app:av_wavesFooterHeight="@dimen/footer_height"
+        app:av_wavesCount="7"
+        app:av_layersCount="3"
+        app:av_backgroundColor="@color/colorAccent"
+        app:av_bubblesPerLayer="16"
+        android:layout_weight="1"/>
+
+</LinearLayout>
